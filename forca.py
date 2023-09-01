@@ -61,16 +61,18 @@ def regra_adcional(chute):
             tentativas += 1
 
 def registro_de_jogadores(nome_jogador):
-    lista_nome = []
-    lista_pontuacao = []
-    for i in range(0, len(lista_nome)):
-        if (nome_jogador != lista_nome[i]):
-            lista_nome.append(nome_jogador)
-            lista_pontuacao.append(tentativas)
-        else:
-            lista_pontuacao[i] += tentativas    
-    for index in range(0, len(lista_nome)):
-        print("Nome do Jogador {} sua pontuação {}".format(lista_nome[index],lista_pontuacao[index]))
+    jogadores = [{'nome' : 'Lucas','pontuacao': 100}]
+    
+    # lista_nome = []
+    # lista_pontuacao = []
+    # for i in range(0, len(lista_nome)):
+    #     if (nome_jogador != lista_nome[i]):
+    #         lista_nome.append(nome_jogador)
+    #         lista_pontuacao.append(tentativas)
+    #     else:
+    #         lista_pontuacao[i] += tentativas    
+    # for index in range(0, len(lista_nome)):
+    #     print("Nome do Jogador {} sua pontuação {}".format(lista_nome[index],lista_pontuacao[index]))
 
 
 print("Digite o nome do jogador")
